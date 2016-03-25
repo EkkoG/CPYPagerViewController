@@ -214,6 +214,8 @@ class CPYPagerViewController: UIViewController, CPYTabViewDelegate, UIScrollView
         startOffsetX = scrollView.contentOffset.x
         
         scrollDirectionFound = false
+        
+        tabView.scrollToCenter()
     }
     
     override func didReceiveMemoryWarning() {
@@ -281,6 +283,27 @@ class CPYTabView: UIView {
         setupSelectedLine()
     }
     
+    func scrollToCenter() -> Void {
+        let button = buttons[currentIndex]
+        
+        let x = CGRectGetMidX(button.frame)
+        
+        let centerX = CGRectGetWidth(scrollView.bounds) / 2.0
+        
+        if x > centerX {
+            if x > scrollView.contentSize.width - centerX {
+                let maxOffset = scrollView.contentSize.width - CGRectGetWidth(scrollView.bounds)
+                scrollView.setContentOffset(CGPointMake(maxOffset, 0), animated: true)
+                return
+            }
+            scrollView.setContentOffset(CGPointMake(x - centerX, 0), animated: true)
+        }
+        else {
+            scrollView.setContentOffset(CGPointMake(0, 0), animated: true)
+        }
+        
+    }
+    
     func tabClicked(sender: CPYButton) -> Void {
         let index = buttons.indexOf(sender)
         delegate?.selectedButton(self, index: index!)
@@ -295,10 +318,6 @@ class CPYTabView: UIView {
         changeCurrentIndex(index)
     }
     
-    private func changeCurrentIndex(index: Int) -> Void {
-        currentIndex = index
-    }
-    
     func changeNextSelectIndex(directionLeft: Bool) -> Void {
         if directionLeft == true {
             nextSelectIndex = currentIndex - 1
@@ -311,6 +330,10 @@ class CPYTabView: UIView {
     func changeState(changeRate:CGFloat) -> Void {
         moveLineView(changeRate)
         changeTabState(changeRate)
+    }
+    
+    private func changeCurrentIndex(index: Int) -> Void {
+        currentIndex = index
     }
     
     private func moveLineView(changeRate: CGFloat) -> Void {
