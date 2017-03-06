@@ -199,13 +199,17 @@
 				TargetAttributes = {
 					967CBBDF1CA24BC8000D2027 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9ATJLJZ6BL;
+						LastSwiftMigration = 0820;
 					};
 					967CBBF61CA24BC8000D2027 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = 967CBBDF1CA24BC8000D2027;
 					};
 					967CBC011CA24BC8000D2027 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0820;
 						TestTargetID = 967CBBDF1CA24BC8000D2027;
 					};
 				};
@@ -409,10 +413,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ATJLJZ6BL;
 				INFOPLIST_FILE = CPYPagerViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYPagerViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -420,10 +426,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ATJLJZ6BL;
 				INFOPLIST_FILE = CPYPagerViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYPagerViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -435,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYPagerViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CPYPagerViewController.app/CPYPagerViewController";
 			};
 			name = Debug;
@@ -447,6 +456,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYPagerViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CPYPagerViewController.app/CPYPagerViewController";
 			};
 			name = Release;
@@ -458,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYPagerViewControllerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = CPYPagerViewController;
 			};
 			name = Debug;
@@ -469,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ciel.CPYPagerViewControllerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = CPYPagerViewController;
 			};
 			name = Release;
@@ -492,6 +504,7 @@
 				967CBC0D1CA24BC8000D2027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		967CBC0E1CA24BC8000D2027 /* Build configuration list for PBXNativeTarget "CPYPagerViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +513,7 @@
 				967CBC101CA24BC8000D2027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		967CBC111CA24BC8000D2027 /* Build configuration list for PBXNativeTarget "CPYPagerViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +522,7 @@
 				967CBC131CA24BC8000D2027 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, CPYPagerViewControllerDatasource {
-    private let titles = ["做", "个", "好", "人", "记", "得", "要", "卡"]
+    fileprivate let titles = ["做", "个", "好", "人", "记", "得", "要", "卡"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class ViewController: UIViewController, CPYPagerViewControllerDatasource {
         self.addChildViewController(pager)
     }
     
-    func viewControllersOfPager(pagerViewController: CPYPagerViewController) -> [UIViewController] {
+    func viewControllersOfPager(_ pagerViewController: CPYPagerViewController) -> [UIViewController] {
         var viewControllers = [UIViewController]()
         for i in 0..<titles.count {
             let vc = UIViewController()
@@ -33,7 +33,7 @@ class ViewController: UIViewController, CPYPagerViewControllerDatasource {
         return viewControllers
     }
     
-    func titlesOfPager(pageViewController: CPYPagerViewController) -> [String] {
+    func titlesOfPager(_ pageViewController: CPYPagerViewController) -> [String] {
         return titles
     }
 
