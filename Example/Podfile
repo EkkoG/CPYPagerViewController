@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CPYPagerViewController_Example' do
+  pod 'CPYPagerViewController', :path => '../'
+
+  target 'CPYPagerViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module CPYPagerViewController {
+  umbrella header "CPYPagerViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

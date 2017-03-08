@@ -1,0 +1,16 @@
+PODS:
+  - CPYPagerViewController (0.1.0)
+
+DEPENDENCIES:
+  - CPYPagerViewController (from `../`)
+
+EXTERNAL SOURCES:
+  CPYPagerViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CPYPagerViewController: 8eff65757bb91ab1c7436e36d8d28d6aed42af62
+
+PODFILE CHECKSUM: ccc18b5144c67f40bfc406ca19e3adce5394a195
+
+COCOAPODS: 1.2.0
